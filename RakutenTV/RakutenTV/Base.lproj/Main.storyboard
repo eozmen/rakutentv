@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="qAg-yG-gES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Main ScreenVC-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="MainScreenVC" customModule="RakutenTV" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="TR5-cl-GJU"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="957.97101449275374" y="20.758928571428569"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="GH6-dd-pmn">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="qAg-yG-gES" customClass="NavigationController" customModule="RakutenTV" customModuleProvider="target" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="iWe-fP-wPL">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="S1L-zv-GR9"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MKi-K3-pY1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="47.826086956521742" y="20.758928571428569"/>
+        </scene>
+        <!--Detail CollectionVC-->
+        <scene sceneID="ZrX-RF-W18">
+            <objects>
+                <collectionViewController storyboardIdentifier="DetailCollectionVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="RRU-dX-5lA" customClass="DetailCollectionVC" customModule="RakutenTV" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="p5D-g6-dpW">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="cam-w9-14D">
+                            <size key="itemSize" width="87" height="97"/>
+                            <size key="headerReferenceSize" width="50" height="190"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <view key="backgroundView" contentMode="scaleToFill" id="65k-uw-P1u">
+                            <rect key="frame" x="0.0" y="-44" width="414" height="896"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
+                            <subviews>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="oR9-sn-Ggj">
+                                    <rect key="frame" x="0.0" y="0.0" width="458" height="297"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="200" id="2d3-JS-88x"/>
+                                    </constraints>
+                                </imageView>
+                                <view alpha="0.0" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aGA-bK-Kmd">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="297"/>
+                                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </view>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="aGA-bK-Kmd" firstAttribute="width" secondItem="oR9-sn-Ggj" secondAttribute="width" id="5W3-YU-Jqj"/>
+                                <constraint firstItem="oR9-sn-Ggj" firstAttribute="leading" secondItem="65k-uw-P1u" secondAttribute="leading" id="AHi-Oe-mby"/>
+                                <constraint firstItem="oR9-sn-Ggj" firstAttribute="top" secondItem="65k-uw-P1u" secondAttribute="top" id="Hv9-Uo-Reo"/>
+                                <constraint firstItem="aGA-bK-Kmd" firstAttribute="height" secondItem="oR9-sn-Ggj" secondAttribute="height" id="TDN-o9-dq7"/>
+                                <constraint firstAttribute="trailing" secondItem="oR9-sn-Ggj" secondAttribute="trailing" id="nix-CA-98A"/>
+                            </constraints>
+                        </view>
+                        <cells/>
+                        <collectionReusableView key="sectionHeaderView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CustomHeaderView" id="pCD-wH-TxP" customClass="CustomHeaderView" customModule="RakutenTV" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="190"/>
+                            <autoresizingMask key="autoresizingMask"/>
+                        </collectionReusableView>
+                        <connections>
+                            <outlet property="dataSource" destination="RRU-dX-5lA" id="Dbo-0p-LEl"/>
+                            <outlet property="delegate" destination="RRU-dX-5lA" id="WeY-Ov-rJg"/>
+                        </connections>
+                    </collectionView>
+                    <connections>
+                        <outlet property="contentImageConstraint" destination="2d3-JS-88x" id="lMd-dO-O8J"/>
+                        <outlet property="contentImageOverlay" destination="aGA-bK-Kmd" id="O9T-fo-dyg"/>
+                        <outlet property="contentImageView" destination="oR9-sn-Ggj" id="hFg-ED-eo4"/>
+                    </connections>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qnD-Kb-YBE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1996" y="21"/>
+        </scene>
+    </scenes>
+</document>
